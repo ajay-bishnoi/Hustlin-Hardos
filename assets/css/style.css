@@ -475,21 +475,21 @@ ul > :last-child {
 }
 
 .loader {
-  width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 120px;
   background: transparent;
   border: 4px solid var(--white);
   border-bottom: 0;
   border-top: 0;
   animation: spin 1s linear infinite;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 @keyframes spin {
   50% {
-    transform: translateY(50px);
+    transform: translatex(50px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translatex(0px);
   }
 }
 .overflow_hidden {
