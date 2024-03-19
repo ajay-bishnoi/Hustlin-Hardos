@@ -170,8 +170,8 @@
     width: 100% !important;
     height: 189px !important;
   }
-  .timeline::before {
-    bottom: 70px;
+  .roadline {
+    max-height: 1550px;
   }
 }
 @media (max-width: 992px) {
@@ -214,15 +214,12 @@
     padding: 48px 12px;
   }
   .pt-100 {
-    padding: 70px 0 100px;
+    padding: 70px 0 250px;
   }
   .responsive .slick-slide > div > div {
     max-width: 327px !important;
     width: 100% !important;
     height: unset !important;
-  }
-  .timeline::before {
-    bottom: 134px;
   }
   .roadBox {
     padding: 0 12px 32px 12%;
@@ -235,20 +232,13 @@
   .timeline > div {
     top: 0 !important;
   }
-  .timeline::after {
-    top: 5%;
-    bottom: 4%;
+  .roadline {
     left: 49px;
-    height: 1415px;
-    transform: translate(-50%);
+    top: 5%;
+    max-height: 1560px;
   }
   .roadBox::after {
     left: 19px;
-  }
-  .timeline::before {
-    bottom: 52px;
-    left: 49px;
-    transform: translate(-50%);
   }
   .lh-39 {
     line-height: 28.85px;
@@ -323,6 +313,11 @@
   .pt-56 {
     padding: 42px 16px 0;
   }
+  .roadline {
+    left: 49px;
+    top: 5%;
+    max-height: 1764px;
+  }
 }
 @media (max-width: 576px) {
   :root {
@@ -330,7 +325,7 @@
     --fs-sm: 14px;
     --fs-md: 16px;
     --fs-lg: 18px;
-    --fs-xl: 21px;
+    --fs-xl: 18px;
     --fs-2xl: 30px;
     --fs-3xl: 50px;
     --fs-4xl: 68px;
@@ -439,7 +434,7 @@
     left: 8px;
   }
   .lh-39 {
-    line-height: 27.85px;
+    line-height: 23.85px;
   }
   .roadBox::after {
     content: url(../img/svg/roadImg.svg);
@@ -447,16 +442,35 @@
     left: 0;
     top: -5px;
   }
-  .timeline::after {
+  .roadline {
     left: 29px;
-    height: 1549px;
     top: 3%;
+    bottom: 2% !important;
+    max-height: unset;
+    display: none;
+  }
+  .timeline::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--black);
+    width: 3px;
+    top: 50px;
+    bottom: 50px;
+    left: 29px;
   }
   .timeline::before {
-    left: 29px;
+    content: url(../img/svg/downArrow.svg);
+    position: absolute;
+    bottom: 41px;
+    left: 22.9px;
+    height: 26px;
+  }
+
+  .lh-19 {
+    line-height: 16px;
   }
   .roadBox {
-    padding: 0px 8px 32px 19%;
+    padding: 0px 8px 18px 19%;
   }
   .lh-21 {
     line-height: 19.79px;

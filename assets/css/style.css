@@ -285,23 +285,14 @@ ul > :last-child {
 .pt-100 {
   padding-top: 100px;
 }
-.timeline::after {
-  content: " ";
-  position: absolute;
-  width: 2px;
-  background: var(--black);
-  top: 7%;
-  height: 1533px;
-  border-radius: 10px;
-  left: 50%;
-  transform: translate(-50%);
+.timeline :last-child {
+  padding-bottom: 0;
 }
-.timeline::before {
-  content: url("../img/svg/downArrow.svg");
-  position: absolute;
-  bottom: 63px;
+.roadline {
   left: 50%;
-  transform: translate(-50%);
+  top: 7%;
+  transform: translateX(-50%);
+  max-height: 1533px;
 }
 .roadBox {
   padding: 0 75px 0 36px;
@@ -339,25 +330,25 @@ ul > :last-child {
   top: 0;
   z-index: 1;
 }
-.timeline > :nth-child(2) {
-  top: -119px;
-}
 .timeline > :nth-child(3) {
   top: -119px;
 }
 .timeline > :nth-child(4) {
-  top: -196px;
+  top: -119px;
 }
 .timeline > :nth-child(5) {
-  top: -213px;
+  top: -196px;
 }
 .timeline > :nth-child(6) {
-  top: -236px;
+  top: -213px;
 }
 .timeline > :nth-child(7) {
-  top: -224px;
+  top: -236px;
 }
 .timeline > :nth-child(8) {
+  top: -224px;
+}
+.timeline > :nth-child(9) {
   top: -250px;
 }
 /* -------------------------------------team------------------------ */
