@@ -9,6 +9,12 @@
   --gray: #70675f;
   --l-brown: #a59a90;
   --d-brown: #70675f !important;
+  --mixblack: #00000040;
+  --mixgray: #ffffff52;
+  --blkmix: #0000004d;
+  --shadowblack: rgba(0, 0, 0, 0.4);
+  --shadowWhite: rgb(255, 254, 254);
+  --shadowGray: rgba(255, 255, 255, 0.3);
   /* fs */
   --fs-xsm: 14px;
   --fs-sm: 16px;

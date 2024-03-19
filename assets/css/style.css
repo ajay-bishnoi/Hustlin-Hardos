@@ -140,9 +140,9 @@ ul > :last-child {
   padding: 67px 0 64px;
 }
 .newshadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  text-shadow: 2px 2px 1px 0px rgba(255, 255, 255, 0.3) inset,
-    /* Inner shadow */ 2px 2px 4px 0px rgba(0, 0, 0, 0.4); /* Outer shadow */
+  text-shadow: 2px 2px 4px var(--shadowblack);
+  text-shadow: 2px 2px 1px 0px var(--shadowGray) inset,
+    /* Inner shadow */ 2px 2px 4px 0px var(--shadowblack); /* Outer shadow */
 }
 
 .max-475 {
@@ -198,8 +198,8 @@ ul > :last-child {
   margin-bottom: 14px;
 }
 .LatestTweets {
-  text-shadow: 2px 2px 1px #ffffff52 inset;
-  text-shadow: 2px 2px 4px #00000040;
+  text-shadow: 2px 2px 1px var(--mixgray) inset;
+  text-shadow: 2px 2px 4px var(--mixblack);
 }
 .responsive .slick-slide > div {
   padding: 50px 21px 46px;
@@ -231,8 +231,8 @@ ul > :last-child {
 }
 /* ----------------------------------minting-------------------- */
 .minting {
-  text-shadow: 2px 2px 1px #ffffff52 inset;
-  text-shadow: 2px 2px 4px #00000040;
+  text-shadow: 2px 2px 1px var(--mixgray) inset;
+  text-shadow: 2px 2px 4px var(--mixblack);
 }
 .px-25-12 {
   padding: 0 12px 0 25px;
@@ -356,8 +356,8 @@ ul > :last-child {
   height: 326px !important;
 }
 .hardoText {
-  text-shadow: -1px -1px 1px 0px #0000004d inset;
-  text-shadow: 1px 1px 1px 0px #ffffff inset;
+  text-shadow: -1px -1px 1px 0px var(--blkmix) inset;
+  text-shadow: 1px 1px 1px 0px var(--white) inset;
 }
 .pt-56 {
   padding-top: 56px;
@@ -441,7 +441,7 @@ ul > :last-child {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  box-shadow: rgb(255, 254, 254) 0px 0px 8px -1px !important;
+  box-shadow: var(--shadowWhite) 0px 0px 8px -1px !important;
 }
 .scale_06 {
   scale: 0.6;
