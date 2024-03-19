@@ -6,7 +6,7 @@ function openNav() {
 }
 
 function navWorking() {
-  if (window.innerWidth < 992) {
+  if (window.innerWidth < 576) {
     document.querySelector("body").classList.remove("overflow_hide");
     document.querySelector(".closeNav").classList.toggle("start-0");
     document.querySelector(".menu").classList.toggle("cross");
@@ -28,6 +28,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 //
 $(".responsive").slick({
   dots: false,
@@ -46,6 +47,25 @@ $(".responsive").slick({
         infinite: true,
       },
     },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+// slider-2
+$(".responsive2").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  prevArrow: ".Previous",
+  nextArrow: ".Nexts",
+  slidesToScroll: 1,
+  responsive: [
     {
       breakpoint: 576,
       settings: {
@@ -77,3 +97,54 @@ function countdownTimer(timeString) {
   }, 1000);
 }
 countdownTimer("40:15:12:10");
+
+// accordian
+const toggleAccordion = (accordionItem) => {
+  const isActive = accordionItem.classList.toggle("active");
+  accordionItem.classList.toggle("addBorder", isActive);
+  const plusIcon = accordionItem.querySelector("img");
+  if (plusIcon) {
+    plusIcon.src = isActive
+      ? "./assets/img/svg/minus.svg"
+      : "./assets/img/svg/plus.svg";
+  }
+};
+
+const accitem = document.querySelectorAll(".accordion_item");
+
+accitem.forEach((accordionItem) => {
+  accordionItem.addEventListener("click", () => {
+    const activeAcc = document.querySelector(".accordion_item.active");
+    if (activeAcc && activeAcc !== accordionItem) {
+      toggleAccordion(activeAcc);
+    }
+    toggleAccordion(accordionItem);
+  });
+});
+//
+const plusButton = document.querySelector(".plus");
+const minusButton = document.querySelector(".minus");
+const valueElement = document.querySelector(".value");
+
+let value = 100;
+
+const updateValue = () => {
+  valueElement.textContent = value;
+};
+
+const handlePlusClick = () => {
+  value++;
+  updateValue();
+};
+
+const handleMinusClick = () => {
+  if (value > 0) {
+    value--;
+    updateValue();
+  }
+};
+
+plusButton.addEventListener("click", handlePlusClick);
+minusButton.addEventListener("click", handleMinusClick);
+
+updateValue();

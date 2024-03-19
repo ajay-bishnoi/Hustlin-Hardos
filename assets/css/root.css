@@ -7,6 +7,8 @@
   --mix-white: #f6f1e2;
   --green: #00a106;
   --gray: #70675f;
+  --l-brown: #a59a90;
+  --d-brown: #70675f !important;
   /* fs */
   --fs-xsm: 14px;
   --fs-sm: 16px;
@@ -43,6 +45,9 @@
 }
 
 /* clr */
+.l-brown {
+  color: var(--l-brown);
+}
 .black {
   color: var(--black);
 }
@@ -78,6 +83,9 @@
 }
 .lh-26 {
   line-height: 26.57px;
+}
+.lh-24 {
+  line-height: 24px;
 }
 .lh-27 {
   line-height: 27px;
@@ -157,7 +165,7 @@
   .mb-35 {
     margin-bottom: 25px;
   }
-  .slick-slide > div > div {
+  .responsive .slick-slide > div > div {
     max-width: 327px !important;
     width: 100% !important;
     height: 189px !important;
@@ -208,7 +216,7 @@
   .pt-100 {
     padding: 70px 0 100px;
   }
-  .slick-slide > div > div {
+  .responsive .slick-slide > div > div {
     max-width: 327px !important;
     width: 100% !important;
     height: unset !important;
@@ -247,6 +255,12 @@
   }
   .py-100-350 {
     padding: 70px 0 0;
+  }
+  .lh-49 {
+    line-height: 33.03px;
+  }
+  .pt-56 {
+    padding: 56px 22px 0;
   }
 }
 @media (max-width: 768px) {
@@ -288,11 +302,11 @@
   .px-43-12 {
     padding: 24px 12px 48px;
   }
-  .slick-slide > div {
+  .responsive .slick-slide > div {
     padding: 30px 21px 30px;
     height: 100% !important;
   }
-  .slick-slide > div > div {
+  .responsive .slick-slide > div > div {
     max-width: 327px !important;
     width: 100% !important;
     height: 189px !important;
@@ -303,13 +317,19 @@
   .roadBox::after {
     left: 19px;
   }
+  .mintData > :nth-child(2) {
+    padding: 8px 24px;
+  }
+  .pt-56 {
+    padding: 42px 16px 0;
+  }
 }
 @media (max-width: 576px) {
   :root {
     --fs-xsm: 14px;
     --fs-sm: 14px;
     --fs-md: 16px;
-    --fs-lg: 22px;
+    --fs-lg: 18px;
     --fs-xl: 21px;
     --fs-2xl: 30px;
     --fs-3xl: 50px;
@@ -452,5 +472,27 @@
   }
   .mb-12 {
     margin-bottom: 8px;
+  }
+  .lh-32 {
+    line-height: 25.69px;
+  }
+  .accordion_item {
+    padding: 16px !important;
+  }
+  .accordion_body {
+    padding-top: 8px;
+    padding-right: 0px;
+  }
+  .active > .accordion_body {
+    padding-top: 8px;
+  }
+  .py-32-24 {
+    padding: 22px 0 12px;
+  }
+  .lh-24 {
+    line-height: 18px;
+  }
+  .responsive2 .slick-list {
+    height: 292px;
   }
 }

@@ -59,7 +59,7 @@
             <div class="w-100 py-8-15">
                 <div class="container1140">
                     <div class="d-flex align-items-center gap-178 justify-content-lg-end justify-content-between">
-                        <h3 class="fw-400 fs-24 lh-28 ff-Moderno black mb-0">Hustlin' Hardos</h3>
+                        <h3 class="fw-400 fs-24 pointer lh-28 ff-Moderno black mb-0">Hustlin' Hardos</h3>
                         <div class="d-sm-flex align-items-center gap-18 d-none">
                             <a target="_blank" href="https://discord.com/">
                                 <img class="navImg" src="./assets/img/svg/discord.svg" alt="discord-img">
@@ -80,11 +80,16 @@
                         </div>
                         <div class="d-flex d-sm-none align-items-center gap-18 moblieView closeNav">
                             <ul class="ps-0 mb-0 d-flex flex-column justify-content-start">
-                                <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">ABOUT US</a></li>
-                                <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">MINTING</a></li>
-                                <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">ROADMAP</a></li>
-                                <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">TEAM</a></li>
-                                <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">FAQS</a></li>
+                                <li><a onclick="navWorking()" class="fw-400 fs-16 lh-21 black navItem ff-Noto"
+                                        href="#ABOUT">ABOUT US</a></li>
+                                <li><a onclick="navWorking()" class="fw-400 fs-16 lh-21 black navItem ff-Noto"
+                                        href="#MINTING">MINTING</a></li>
+                                <li><a onclick="navWorking()" class="fw-400 fs-16 lh-21 black navItem ff-Noto"
+                                        href="#ROADMAP">ROADMAP</a></li>
+                                <li><a onclick="navWorking()" class="fw-400 fs-16 lh-21 black navItem ff-Noto"
+                                        href="#TEAM">TEAM</a></li>
+                                <li><a onclick="navWorking()" class="fw-400 fs-16 lh-21 black navItem ff-Noto"
+                                        href="#FAQS">FAQS</a></li>
                             </ul>
                             <button class="fw-600 fs-14 lh-19 ff-Noto black WalletBtn ms-02">Connect
                                 Wallet</button>
@@ -119,11 +124,11 @@
             <div class="w-100 d-none d-sm-block">
                 <div class="container1140">
                     <ul class="ps-0 mb-0 d-flex align-items-center justify-content-center">
-                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">ABOUT US</a></li>
-                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">MINTING</a></li>
-                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">ROADMAP</a></li>
-                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">TEAM</a></li>
-                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#">FAQS</a></li>
+                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#ABOUT">ABOUT US</a></li>
+                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#MINTING">MINTING</a></li>
+                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#ROADMAP">ROADMAP</a></li>
+                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#TEAM">TEAM</a></li>
+                        <li><a class="fw-400 fs-16 lh-21 black navItem ff-Noto" href="#FAQS">FAQS</a></li>
                     </ul>
                 </div>
             </div>
@@ -162,7 +167,7 @@
                             NFT is your gateway to The
                             Boardroom, one of the most rewarding and engaging online communities
                         </p>
-                        <span class="mb-0 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                        <span class="mb-0 fw-400 fs-16 pointer lh-21 ff-Noto black position-relative readMore">Read
                             More...</span>
                     </div>
                 </div>
@@ -173,13 +178,13 @@
         </div>
     </section>
     <!-- Latest Tweets -->
-    <section class="py-90">
+    <section id="ABOUT" class="py-90">
         <div class="container1140">
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="mb-0  fw-300 fs-80 lh-83 ff-Moderno LatestTweets">Latest Tweets</h1>
                 <div class="d-flex align-items-center gap-55">
-                    <img class="scales-1 prev" src="./assets/img/svg/prevArrow.svg" alt="prevArrow">
-                    <img class="scales-1 next" src="./assets/img/svg/nextArrow.svg" alt="nextArrow">
+                    <img class="scales-1 pointer prev" src="./assets/img/svg/prevArrow.svg" alt="prevArrow">
+                    <img class="scales-1 pointer next" src="./assets/img/svg/nextArrow.svg" alt="nextArrow">
                 </div>
             </div>
         </div>
@@ -193,19 +198,15 @@
                     <div>
                         <h2 class="mb-13 fw-600 fs-36 lh-39 ff-Noto">Etiam eget</h2>
                         <div class="d-flex align-items-center gap-11 mb-14">
-                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                    fill="#55ACEE" />
-                            </svg>
+                            <a target="_blank" href="https://twitter.com/"><img src="./assets/img/svg/twit.svg"
+                                    alt="twiter-img"></a>
                             <h5 class="mb-0 fs-14 fw-400 lh-19 ff-Noto black">23/02/2022</h5>
                         </div>
                         <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
                             Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.
                         </p>
                     </div>
-                    <span class="mb-0 mt-3 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                    <span class="mb-0 mt-3 pointer fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
                         More...</span>
                 </div>
                 <!--  -->
@@ -213,19 +214,15 @@
                     <div>
                         <h2 class="mb-13 fw-600 fs-36 lh-39 ff-Noto">Venenatis.</h2>
                         <div class="d-flex align-items-center gap-11 mb-14">
-                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                    fill="#55ACEE" />
-                            </svg>
+                            <a target="_blank" href="https://twitter.com/"><img src="./assets/img/svg/twit.svg"
+                                    alt="twiter-img"></a>
                             <h5 class="mb-0 fs-14 fw-400 lh-19 ff-Noto black">22/02/2022</h5>
                         </div>
                         <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
                             Tortor dolor ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.
                         </p>
                     </div>
-                    <span class="mb-0 mt-3 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                    <span class="mb-0 mt-3 pointer fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
                         More...</span>
                 </div>
                 <!--  -->
@@ -233,19 +230,15 @@
                     <div>
                         <h2 class="mb-13 fw-600 fs-36 lh-39 ff-Noto">Quis vulputate.</h2>
                         <div class="d-flex align-items-center gap-11 mb-14">
-                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                    fill="#55ACEE" />
-                            </svg>
+                            <a target="_blank" href="https://twitter.com/"><img src="./assets/img/svg/twit.svg"
+                                    alt="twiter-img"></a>
                             <h5 class="mb-0 fs-14 fw-400 lh-19 ff-Noto black">20/02/2022</h5>
                         </div>
                         <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
                             Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.
                         </p>
                     </div>
-                    <span class="mb-0 mt-3 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                    <span class="mb-0 mt-3 pointer fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
                         More...</span>
                 </div>
                 <!--  -->
@@ -253,19 +246,15 @@
                     <div>
                         <h2 class="mb-13 fw-600 fs-36 lh-39 ff-Noto">Etiam eget</h2>
                         <div class="d-flex align-items-center gap-11 mb-14">
-                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                    fill="#55ACEE" />
-                            </svg>
+                            <a target="_blank" href="https://twitter.com/"><img src="./assets/img/svg/twit.svg"
+                                    alt="twiter-img"></a>
                             <h5 class="mb-0 fs-14 fw-400 lh-19 ff-Noto black">23/02/2022</h5>
                         </div>
                         <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
                             Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.
                         </p>
                     </div>
-                    <span class="mb-0 mt-3 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                    <span class="mb-0 mt-3 pointer fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
                         More...</span>
                 </div>
                 <!--  -->
@@ -273,19 +262,15 @@
                     <div>
                         <h2 class="mb-13 fw-600 fs-36 lh-39 ff-Noto">Venenatis.</h2>
                         <div class="d-flex align-items-center gap-11 mb-14">
-                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                    fill="#55ACEE" />
-                            </svg>
+                            <a target="_blank" href="https://twitter.com/"><img src="./assets/img/svg/twit.svg"
+                                    alt="twiter-img"></a>
                             <h5 class="mb-0 fs-14 fw-400 lh-19 ff-Noto black">22/02/2022</h5>
                         </div>
                         <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
                             Tortor dolor ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.
                         </p>
                     </div>
-                    <span class="mb-0 mt-3 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                    <span class="mb-0 mt-3 pointer fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
                         More...</span>
                 </div>
                 <!--  -->
@@ -293,26 +278,22 @@
                     <div>
                         <h2 class="mb-13 fw-600 fs-36 lh-39 ff-Noto">Quis vulputate.</h2>
                         <div class="d-flex align-items-center gap-11 mb-14">
-                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                    fill="#55ACEE" />
-                            </svg>
+                            <a target="_blank" href="https://twitter.com/"><img src="./assets/img/svg/twit.svg"
+                                    alt="twiter-img"></a>
                             <h5 class="mb-0 fs-14 fw-400 lh-19 ff-Noto black">20/02/2022</h5>
                         </div>
                         <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
                             Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.
                         </p>
                     </div>
-                    <span class="mb-0 mt-3 fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
+                    <span class="mb-0 mt-3 pointer fw-400 fs-16 lh-21 ff-Noto black position-relative readMore">Read
                         More...</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- Minting -->
-    <section class="py-90">
+    <section id="MINTING" class="py-90">
         <div class="container1140">
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="mb-0  fw-400 fs-80 lh-83 ff-Noto minting">Minting</h1>
@@ -336,22 +317,22 @@
                             innings of the paradigm shift
                             that will be powered by web3.
                         </p>
-                        <div class="d-flex align-items-center mintData mb-35">
-                            <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex mintData mb-35">
+                            <button class="border-0 pointer w-100 minus">
                                 <svg width="11" height="4" viewBox="0 0 11 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.9 3.864V0.516H10.26V3.864H0.9Z" fill="black" />
                                 </svg>
-                            </div>
-                            <h3 class="mb-0 fw-600 fs-36 lh-49 ff-Noto black">100</h3>
-                            <div class="d-flex justify-content-center align-items-center">
+                            </button>
+                            <h3 class="mb-0 value fw-600 fs-36 lh-49 ff-Noto black">100</h3>
+                            <button class="border-0 pointer w-100 plus">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.82 15.852V9.336H0.34V6.924H6.82V0.407999H9.268V6.924H15.784V9.336H9.268V15.852H6.82Z"
                                         fill="black" />
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                         <button class="fw-600 fs-14 lh-19 ff-Noto black WalletBtn ms-02  mb-35">MINT NOW</button>
                         <h3 class="mb-0 fw-600 fs-18 lh-24 ff-Noto green">Time Left</h3>
@@ -389,7 +370,7 @@
         </div>
     </section>
     <!-- roadMap name -->
-    <section class="py-90">
+    <section id="ROADMAP" class="py-90">
         <div class="container1140">
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="mb-0 fw-400 fs-80 lh-83 ff-Noto minting">RoadMap</h1>
@@ -510,7 +491,231 @@
             </div>
         </div>
     </section>
-
+    <!-- slider-content -->
+    <section id="TEAM" class="py-90">
+        <div class="container1140">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-0  fw-400 fs-80 lh-83 ff-Noto LatestTweets">Team</h1>
+                <div class="d-flex align-items-center gap-55">
+                    <img class="scales-1 pointer Previous" src="./assets/img/svg/prevArrow.svg" alt="prevArrow">
+                    <img class="scales-1 pointer Nexts" src="./assets/img/svg/nextArrow.svg" alt="nextArrow">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider -->
+    <section class="sliderBorder">
+        <div class="container1140">
+            <!-- slider -->
+            <div class="responsive2">
+                <div class="text-center pt-56 h-326 d-flex flex-column  align-items-center">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                        <img class="pointer" src="./assets/img/svg/hardo1.svg" alt="hardo-image">
+                        <h2 class="my-lg-3 my-2 l-brown fw-900  fs-36 lh-49 hardoText ff-Noto">Executive Hardo</h2>
+                    </div>
+                    <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
+                        Crypto startup executive, former VC Investor (US$
+                        <span class="d-lg-block">1B+ AuM), former MBB Consultant,</span>
+                    </p>
+                </div>
+                <div class="text-center pt-56 h-326 d-flex flex-column  align-items-center">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                        <img class="pointer" src="./assets/img/svg/hardo2.svg" alt="hardo-image">
+                        <h2 class="my-lg-3 my-2 l-brown fw-900  fs-36 lh-49 hardoText ff-Noto">Johnny Banjo</h2>
+                    </div>
+                    <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
+                        The Hustlin’ Hardos have arrived to the metaverse!
+                        <span class="d-lg-block">9,999 Hardos have taken over. Lorem Ipsum is simply</span>
+                        dummy text of the printing industry.
+                    </p>
+                </div>
+                <div class="text-center pt-56 h-326 d-flex flex-column  align-items-center">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                        <img class="pointer" src="./assets/img/svg/hardo1.svg" alt="hardo-image">
+                        <h2 class="my-lg-3 my-2 l-brown fw-900  fs-36 lh-49 hardoText ff-Noto">Executive Hardo</h2>
+                    </div>
+                    <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
+                        Crypto startup executive, former VC Investor (US$
+                        <span class="d-lg-block">1B+ AuM), former MBB Consultant,</span>
+                    </p>
+                </div>
+                <div class="text-center pt-56 h-326 d-flex flex-column  align-items-center">
+                    <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                        <img class="pointer" src="./assets/img/svg/hardo2.svg" alt="hardo-image">
+                        <h2 class="my-lg-3 my-2 l-brown fw-900  fs-36 lh-49 hardoText ff-Noto">Johnny Banjo</h2>
+                    </div>
+                    <p class="mb-0 fw-400 fs-16 lh-21 ff-Noto black">
+                        The Hustlin’ Hardos have arrived to the metaverse!
+                        <span class="d-lg-block">9,999 Hardos have taken over. Lorem Ipsum is simply</span>
+                        dummy text of the printing industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQs-content -->
+    <section id="FAQS" class="py-90">
+        <div class="container1140">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-0 fw-400 fs-80 lh-83 ff-Noto minting">FAQs</h1>
+            </div>
+        </div>
+    </section>
+    <!-- FAQs -->
+    <section class="faqBorder">
+        <div class="container1140">
+            <div class="accordion_card mx-auto ">
+                <!-- 1 -->
+                <div class="accordion_item active">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">What is an NFT?</h2>
+                        <img src="./assets/img/svg/minus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion_item">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">How do I get an NFT?</h2>
+                        <img src="./assets/img/svg/plus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion_item">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">How much is a Hustlin' Hardo NFT?</h2>
+                        <img src="./assets/img/svg/plus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="accordion_item">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">Where can I mint a Hustlin' Hardos NFT?</h2>
+                        <img src="./assets/img/svg/plus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="accordion_item">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">How do I mint a Hustlin' Hardo NFT?</h2>
+                        <img src="./assets/img/svg/plus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="accordion_item">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">How many Hustlin' Hardos NFTs will there be?
+                        </h2>
+                        <img src="./assets/img/svg/plus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="accordion_item">
+                    <div class="accordion_head d-flex align-items-center justify-content-between">
+                        <h2 class="fw-600 fs-24 lh-32 ff-Noto black mb-0">What is the utility and functionality of a
+                            Hustlin' Hardo NFT?</h2>
+                        <img src="./assets/img/svg/plus.svg" alt="plus-icon">
+                    </div>
+                    <div class="accordion_body">
+                        <p class="mb-0 fw-400 fs-16 lh-24 ff-Noto black">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-32-24">
+        <div class="container1140">
+            <h3 class="ff-Noto fw-400 fs-16 lh-21 black text-center">© Hustlin' Hardos 2022</h3>
+        </div>
+        <div id="myBtn" onclick="topFunction()" class="backtop">
+            <svg class="scale_06" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.0835 17.0007V33.6673H14.9168V17.0007H0.333496L17.0002 0.333984L33.6668 17.0007H19.0835Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
