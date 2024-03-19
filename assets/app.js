@@ -39,7 +39,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
 //
 $(".responsive").slick({
   dots: false,
